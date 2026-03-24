@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile — Shaheer Sheikh</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .profile-layout {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        gap: 4rem;
+        align-items: start;
+      }
+
+      .profile-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+
+      .avatar-box {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        background-color: #1a1a1a;
+        border: 1px solid #333333;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        color: #86868b;
+        font-size: 0.85rem;
+      }
+
+      .avatar-box .avatar-icon {
+        font-size: 3.5rem;
+      }
+
+      .sidebar-name {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #f5f5f7;
+      }
+
+      .sidebar-role {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #f39c12;
+      }
+
+      .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+      }
+
+      .social-links a {
+        padding: 0.4rem 0.9rem;
+        font-size: 0.78rem;
+        border: 1px solid #333333;
+        border-radius: 50px;
+        color: #86868b;
+        text-decoration: none;
+        transition:
+          border-color 0.3s ease,
+          color 0.3s ease;
+      }
+
+      .social-links a:hover {
+        border-color: #f39c12;
+        color: #f39c12;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+        margin: 1rem 0 2.5rem;
+      }
+
+      .info-box {
+        padding: 1rem;
+        background-color: #1a1a1a;
+        border: 1px solid #333333;
+        border-radius: 8px;
+      }
+
+      .info-box .lbl {
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #86868b;
+        margin-bottom: 0.3rem;
+      }
+
+      .info-box .val {
+        font-size: 0.88rem;
+        font-weight: 500;
+        color: #f5f5f7;
+      }
+
+      .bio-block {
+        margin-bottom: 3rem;
+      }
+
+      .bio-block h2 {
+        margin-bottom: 1rem;
+      }
+
+      .bio-block p {
+        margin-bottom: 0.9rem;
+        color: #86868b;
+        line-height: 1.6;
+      }
+
+      .experience {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .exp-item {
+        padding-left: 1.5rem;
+        border-left: 2px solid #333333;
+      }
+
+      .exp-date {
+        font-size: 0.8rem;
+        color: #f39c12;
+        margin-bottom: 0.3rem;
+      }
+
+      .exp-title {
+        font-weight: 600;
+        color: #f5f5f7;
+        margin-bottom: 0.5rem;
+      }
+
+      .exp-item p {
+        font-size: 0.9rem;
+        color: #86868b;
+      }
+
+      @media (max-width: 1024px) {
+        .profile-layout {
+          grid-template-columns: 220px 1fr;
+          gap: 2.5rem;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .profile-layout {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .avatar-box {
+          aspect-ratio: unset;
+          height: 220px;
+        }
+
+        .info-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">Shaheer<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html" class="active">Profile</a></li>
+        <li><a href="career.html">Goals</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-label">About Me</span>
+        <h1>Personal Profile</h1>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="profile-layout">
+          <div class="profile-sidebar">
+            <div class="avatar-box">
+              <span class="avatar-icon"
+                ><img src="images/Image 02.jpg" alt="shaheer Sheikh"
+              /></span>
+            </div>
+
+            <div class="sidebar-name">Shaheer Sheikh</div>
+
+            <div class="sidebar-role">FinTech Student</div>
+
+            <p style="color: #86868b; font-size: 0.9rem; line-height: 1.5">
+              Bridging the gap between traditional finance, digital policy, and
+              Web3 development.
+            </p>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/shaheer-sheikh-0072a3282?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                >🔗 LinkedIn</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <div class="bio-block">
+              <span class="section-label">Biography</span>
+              <h2>About Me</h2>
+
+              <p>
+                I am a passionate student merging the worlds of traditional
+                finance and emerging technologies. My core interests lie in
+                financial modeling, econometrics, and exploring how blockchain
+                frameworks can revolutionize modern platforms.
+              </p>
+
+              <p>
+                Currently, I am a third-year student pursuing a degree in
+                Financial Technologies at FAST National University of Computer
+                and Emerging Sciences in Islamabad. My coursework extensively
+                covers both Financial and Technical aspects, allowing me to
+                build comprehensive, data-driven applications.
+              </p>
+
+              <p>
+                Beyond academics, I maintain a strong interest in policy
+                formulation, specifically within Pakistan's energy and financial
+                sectors. Whether I am analyzing the regulatory environment or
+                developing digital wallet prototypes, I am consistently eager to
+                tackle complex, real-world problems.
+              </p>
+            </div>
+
+            <span class="section-label">Details</span>
+            <div class="info-grid">
+              <div class="info-box">
+                <div class="lbl">Full Name</div>
+                <div class="val">Shaheer Sheikh</div>
+              </div>
+
+              <div class="info-box">
+                <div class="lbl">Location</div>
+                <div class="val">I-8, Islamabad, Pakistan</div>
+              </div>
+
+              <div class="info-box">
+                <div class="lbl">Degree</div>
+                <div class="val">BS Financial Technologies</div>
+              </div>
+
+              <div class="info-box">
+                <div class="lbl">University</div>
+                <div class="val">FAST NUCES</div>
+              </div>
+
+              <div class="info-box">
+                <div class="lbl">Year</div>
+                <div class="val">3rd Year — Graduating 2027</div>
+              </div>
+
+              <div class="info-box">
+                <div class="lbl">Email</div>
+                <div class="val">shaheer001sheikh@gmail.com</div>
+              </div>
+            </div>
+
+            <span class="section-label">Journey</span>
+            <h2 style="margin-bottom: 1.8rem">Education &amp; Experience</h2>
+
+            <div class="experience">
+              <div class="exp-item">
+                <div class="exp-date">Past Experience</div>
+                <div class="exp-title">
+                  Intern — Securities and Exchange Commission of Pakistan (SECP)
+                </div>
+                <p>
+                  Gained valuable exposure to the regulatory environment, policy
+                  formulation, and the frameworks governing capital markets in
+                  Pakistan.
+                </p>
+              </div>
+
+              <div class="exp-item">
+                <div class="exp-date">2025 – 2026</div>
+                <div class="exp-title">
+                  Participant — CFA Institute Research Challenge
+                </div>
+                <p>
+                  Collaborated to build a comprehensive financial model and
+                  conduct a detailed valuation of United Bank Limited (UBL) for
+                  the concluding challenge.
+                </p>
+              </div>
+
+              <div class="exp-item">
+                <div class="exp-date">2023 — Present</div>
+                <div class="exp-title">
+                  BS Financial Technologies — FAST NUCES
+                </div>
+                <p>
+                  Core studies including Web Programming, Financial Institutions
+                  & Markets, Business Law, and Econometrics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          © 2026 Shaheer Sheikh &nbsp;·&nbsp;
+          <a href="contact.html">Get In Touch</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
